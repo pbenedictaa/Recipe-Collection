@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cooking Yummy</title>
+</head>
+
+<body>
+  <header-navigation></header-navigation>
+  <div class="jumbotron">
+    <img src="src/styles/img/logoburger.jpg" class="logo">
+    <h1>Cooking Yummy</h1>
+    <p><b>Recipe Collection for Your Happy and Healthy Tummy</b></p>
+  </div>
+
+  <main class="container">
+
+    <article id="tentang" class="card1">
+      <h2>Tentang</h2>
+      <p>Cooking Yummy adalah suatu aplikasi yang menyediakan informasi kumpulan resep makanan western yang enak dan sehat.
+      Pengunjung dapat mencari dan memilih resep sehingga dapat menjadi referensi masakan sehari-hari. Resep yang tersedia
+      telah lulus uji dan direkomendasikan oleh para ahli serta akan diperbaharui secara berkala untuk menjamin kualitas dan
+      kelengkapannya.
+      </p>
+      <p>Aplikasi ini dirancang untuk berfungsi pada browser web modern, sistem-sistem operasi dan platform utama. Fitur dan
+      kompatibilitas mungkin berbeda-beda antar browser web, sistem operasi dan platform. Semua resep yang ada pada Situs atau
+      Aplikasi ini disediakan sebagai bahan referensi dan informasi umum yang aman untuk diterapkan. Pengunjung dihimbau untuk
+      mengikuti seluruh instruksi pada resep ketika mengaplikasikannya agar mendapatkan hasil yang diharapkan.</p>
+    </article>
+
+    <div class="card1">
+    <section class="row mb-2">
+      <div class="col-sm-12 col-md-3">
+        <h2 class="pt-1">Recipes</h2>
+      </div>
+      <div class="col-sm-12 col-md-9">
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <search-bar></search-bar>
+          </div>
+          <div class="col-5 d-sm-none d-md-block text-right">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="d-none d-md-block col-3">
+        <div class="d-flow-root">
+          <h6 class="float-left">Filter by:</h6>
+          <a href="javascript:void(0)" id="clearFilter" class="text-filter float-right">Clear filter</a>
+        </div>
+        <hr>
+        <receipe-category></receipe-category>
+      </div>
+      <div class="col-sm-12 col-md-9">
+        <receipe-list></receipe-list>
+        <div id="loader-text" class="loader loader-default is-active" style="display: none;">
+          <div class="loader-message">Loading</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="card1">
+  <section class="details container mb-5" style="display:none;">
+    <breadcrumb-detail currentpage=""></breadcrumb-detail>
+
+    <div class="row">
+      <div class="col-12 col-md-5 mb-2">
+        <img src="" id="detailImage" class="img-fluid img-shadow">
+      </div>
+      <div class="col-12 col-md-7">
+        <detail-header title="" sourceName="" preparationMinutes="" servings="" summary="">
+        </detail-header>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 col-md-5 mb-4">
+        <h5>Ingredients</h5>
+        <hr>
+        <div class="card-inggredient px-3 py-3">
+          <ul class="ingredients"></ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 mb-4">
+        <h5>Method</h5>
+        <hr>
+        <ol class="methods"></ol>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  </div>
+  <footer>
+    <p>Submission Membuat Aplikasi Web, Dicoding Academy</p>
+    <p>copyright &copy; 2021 Putri Benedicta Simanjuntak</p>
+  </footer>
+</body>
+
+</html>
